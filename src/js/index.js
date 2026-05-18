@@ -5,6 +5,8 @@ const inputSearch = document.getElementById('input-search');
 const btnSearch = document.getElementById('btn-search');
 const profileResults = document.querySelector('.profile-results');
 
+const searchForm = document.getElementById('search-form');
+
 async function getUserProfile() {
     const userName = inputSearch.value;
     if (!userName) {
@@ -24,10 +26,7 @@ async function getUserProfile() {
     }
 }
 
-btnSearch.addEventListener('click', getUserProfile);
-
-inputSearch.addEventListener('keyup', (event) => {
-    if (event.key === 'Enter') {
-        getUserProfile();
-    }
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Impede a página de recarregar
+    getUserProfile();
 });

@@ -122,6 +122,13 @@ main {
   letter-spacing: -0.01em;
 }
 
+#search-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container header #btn-search {
   width: 100%;
   max-width: 12rem;

@@ -22,9 +22,10 @@
             <header>
                 <h2>Buscar Usuário</h2>
                 <p class="search-hint">Digite o nome de usuário do GitHub e tenha acesso aos dados do perfil</p>
-                <input type="text" id="input-search" placeholder="Digite o nome do usuário no GitHub">
-                
-                <input type="button" value="Buscar" id="btn-search">
+                <form id="search-form">
+                    <input type="text" id="input-search" placeholder="Digite o nome do usuário no GitHub">
+                    <button type="submit" id="btn-search">Buscar</button>
+                </form>
             </header>
 
             <div class="profile-results"></div>
